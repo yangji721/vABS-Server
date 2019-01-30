@@ -15,9 +15,18 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    void paintEvent(QPaintEvent*);
+
 private slots:
 
     void on_mainexit_2_clicked();
+
+    void on_mainexit_clicked();
+
+    void on_mainexit_3_clicked();
+
+    void timeout();
 
 private:
     Ui::MainWindow *ui;
