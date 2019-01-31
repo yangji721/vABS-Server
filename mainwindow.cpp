@@ -59,7 +59,30 @@ void MainWindow::paintEvent(QPaintEvent *)
     }
     fin.close();
 
-    //read bit.txt then verdict use function. Last, update bit.txt
+    //read bit.txt then verdict use function. Last, update bit.txt (Yes/No)
+    string str1;
+{
+    ifstream fin1("/Users/scaryang/Desktop/Interface/server/bit.txt");
+    fin1 >> str1;
+}
+    //test output
+    cout << str1 << endl;
+
+    if( str1 == "Yes")
+    {
+        checkbit();
+        //modify the bit
+        ofstream outfile("/Users/scaryang/Desktop/Interface/server/bit.txt", ofstream::out);
+        outfile << "No";
+        outfile.close();
+    }
+}
+
+void MainWindow::checkbit()
+{
+    //update the interface of database
+    ui->tableWidget->insertRow(ui->tableWidget->rowCount());
+    ui->tableWidget->setItem(ui->tableWidget->rowCount()-1,0, new QTableWidgetItem("Check-Successfully"));
 }
 
 void MainWindow::on_mainexit_2_clicked()

@@ -18,6 +18,8 @@ public:
 public slots:
     void paintEvent(QPaintEvent*);
 
+    void checkbit();
+
 private slots:
 
     void on_mainexit_2_clicked();
