@@ -13,9 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    pbutton.cpp \
+    dialog2.cpp
 
 HEADERS  += mainwindow.h \
-    customtabstyle.h
+    customtabstyle.h \
+    pbutton.h \
+    dialog2.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    dialog2.ui

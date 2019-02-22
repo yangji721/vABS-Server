@@ -4,6 +4,9 @@
 #include <iostream>
 #include <fstream>
 #include <QTimer>
+#include "dialog2.h"
+#include "pbutton.h"
+#include <QHBoxLayout>
 
 using namespace std;
 
@@ -89,11 +92,46 @@ void MainWindow::on_mainexit_2_clicked()
 {
     //disable 'start server' button once it is pressed
     ui->mainexit_2->setEnabled(false);
+
+    //generate the data button
+    //generate multi-button
+    QString str;
+    int i = 0;
+    PButton *button[3];
+
+    //set font in button
+    QFont FontObj;
+    FontObj.setFamily(QStringLiteral("Helvetica"));
+    FontObj.setPointSize(14);
+    FontObj.setUnderline(true);
+
+    for (;i < 3;i++)
+    {
+        button[i] = new PButton(this);
+        button[i]->setVisible(true);
+        str.setNum(i,10);
+        button[i]->setText("No." + str);
+        //button[i]->setGeometry(10,i*height+3, width,height);
+        button[i]->setclick();
+        button[i]->setBackgroundRole(QPalette::Base);
+        button[i]->setFlat(true);
+        button[i]->setFont(FontObj);
+        button[i]->setStyleSheet("QPushButton {color: blue}");
+
+
+        QWidget* pWidget = new QWidget();
+        QHBoxLayout* pLayout = new QHBoxLayout(pWidget);
+        pLayout->addWidget(button[i]);
+        pWidget->setLayout(pLayout);
+        pLayout->setAlignment(Qt::AlignCenter);
+        pLayout->setContentsMargins(0, 0, 0, 0);
+        ui->tableWidget->setCellWidget(i,0 ,pWidget);
+    }
 }
 
 void MainWindow::on_mainexit_clicked()
 {
-    //change the value of server parameter.
+    //change the value of server parameter.    
 }
 
 void MainWindow::on_mainexit_3_clicked()

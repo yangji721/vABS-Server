@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog2</class>
+ <widget class="QWidget" name="dialog2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>857</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>291</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
+   </property>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <row>
+    <property name="text">
+     <string>Gender</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Birthday</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Race</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Marital</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Language</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>PPBP</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>DCode</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Diagnosis</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>StartTime</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>EndTime</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Value</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="6" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="7" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="8" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+   <item row="9" column="0">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Heiti TC</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>40</y>
+     <width>451</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica Neue</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>Lab</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Value</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Unit</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
